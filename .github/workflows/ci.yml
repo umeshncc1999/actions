@@ -23,10 +23,12 @@ jobs:
         java-version: 1.8
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+      #run: chmod +x gradlew
+      run: pwd;ls -a;echo bharat > kk.txt
 
     - name: Build with Gradle
-      run: bash gradlew build
+      #run: bash gradlew build
+      run: pwd;ls -a ; cat kk.txt
 
     # - name: Build and Push Docker Image
     #   uses: mr-smithers-excellent/docker-build-push@v4
